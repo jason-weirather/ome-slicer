@@ -1,8 +1,4 @@
 # ome-slicer
-A package to perform basic operations on ome tiff files and preserve structure.
-
-
-# ome-slicer
 
 Efficient OME-TIFF manipulation for large datasets.
 
