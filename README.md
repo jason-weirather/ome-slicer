@@ -118,14 +118,6 @@ cropped_slicer.save('cropped_image.ome.tiff')
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
 
-## Contributing
-
-Contributions are welcome! Please submit issues and pull requests to the [GitHub repository](https://github.com/jason-weirather/ome-slicer).
-
-## Contact
-
-For questions or suggestions, please contact Jason L Weirather at [jason.weirather@gmail.com](mailto:jason.weirather@gmail.com).
-
 ## Acknowledgments
 
 **ome-slicer** leverages the capabilities of:
