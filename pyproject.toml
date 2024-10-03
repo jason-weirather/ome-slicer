@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,7 +9,7 @@ description = "Efficient OME-TIFF manipulation for large datasets"
 authors = [
     {name = "Jason L Weirather", email = "jason.weirather@gmail.com"}
 ]
-license = "Apache-2.0"
+license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.8"
 keywords = ["ome-tiff", "imaging", "image processing", "bioinformatics"]
@@ -21,25 +21,14 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Image Processing",
     "Topic :: Scientific/Engineering :: Bio-Informatics"
 ]
-
-[project.urls]
-"Source" = "https://github.com/yourusername/ome-slicer"
-"Tracker" = "https://github.com/yourusername/ome-slicer/issues"
-
-[project.dependencies]
-numpy = ">=1.20"
-tifffile = ">=2023.7.18"
-pyvips = ">=2.1"
-ome-types = ">=0.2.9"
-
-[tool.pytest.ini_options]
-testpaths = [
-    "tests",
+dependencies = [
+  "numpy >= 1.20",
+  "tifffile >= 2023.7.10",
+  "pyvips >= 2.2.3",
+  "ome-types >= 0.5.2"
 ]
 
-[tool.setuptools.packages.find]
-where = ["omeslicer"]
-
-[tool.black]
-line-length = 88
+[project.urls]
+"Source" = "https://github.com/jason-weirather/ome-slicer"
+"Tracker" = "https://github.com/jason-weirather/ome-slicer/issues"
 
